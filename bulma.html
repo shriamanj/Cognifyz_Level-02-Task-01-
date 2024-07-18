@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+              alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4" id="heading">MacBook Air</p>
+              <p class="subtitle is-6">@Coding</p>
+            </div>
+          </div>
+          <div class="content">
+            Life happens, coffee helps, laptops keep me going and My workspace is wherever my laptop is.
+            <br><br>
+            <p id="time">10:00 PM - 17 July 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    let newTime = new Date().toLocaleTimeString();
+    let newDate = new Date().toLocaleDateString();
+    const time = document.querySelector("#time");
+    time.innerText = newTime + " - " + newDate;
+  </script>
+
+</body>
+</html>
+</body>
+</html>
